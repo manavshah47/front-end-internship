@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory | Flipkart.com</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="shortcut icon" href="images/flipkart_icon-icons.com_62718.ico" type="image/x-icon">
+    <link rel="stylesheet" href="common.css">
+    <script src="common.js"></script>
+    <style>
+        .container1{
+            height: 10%;
+            background-color: white;
+            padding: 0em 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container1 p{
+            font-size: 1em;
+        }
+
+        .container1 button{
+            padding: 0.5em 1em;
+            background-color: white;
+            color: #2874f0;
+            border: 2px solid #f2f2f2;
+        }
+        .container2{
+            height: 30%;
+            background-color: white;
+            margin: 0.5em 0em 0em 0em;
+            display: flex;
+            line-height: 0.5em;
+            padding: 1em;
+        }
+
+        .left-container{
+            width: 65%;
+        }
+
+        .right-container{
+            width: 35%;
+        }
+
+        .container3{
+            height: 30%;
+            background-color: white;
+            display: flex;
+        }
+
+        .left-container-1{
+            width: 50%;
+        }
+
+        .right-container-1{
+            width: 50%;
+        }
+
+        #green{
+            color: #2db634;
+        }
+
+        #blue{
+            color: #2874f0;
+        }
+
+        #grey{
+            color: grey;
+            font-size: 0.7em;
+        }
+
+        .right-container button{
+            color: black;
+            background-color: white;
+            border: 1px solid grey;
+            margin: 1em;
+            padding: 0.5em 1em;
+        }
+        
+        .savebutton-1{
+            width: 100%;
+            height: 3em;
+            margin: auto;
+            color: black;
+            background-color: white;
+            border-top: 2px solid #f3f3f3;
+            border-left: none;
+            border-bottom:none;
+            border-right: 2px solid #f3f3f3;
+        }
+        
+        .savebutton-2{
+            width: 100%;
+            height: 3em;
+            margin: auto;
+            color: black;
+            background-color: white;
+            border-top: 2px solid #f3f3f3;
+            border-right: none;
+            border-left: none;
+            border-bottom:none;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+
+        #orange{
+            color: white;
+            background-color: #fb641b;
+            padding: 0.5em 1em;
+            border: 1px solid #fb641b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-pc">
+        <p>We made this website for only mobile phone users,so please adjust your screen size to mobile phone size to see it.</p>
+    </div>
+    <div class="container-mobile">
+        <header>
+            <div class="box">
+                <div class="box1">
+                    &#x2B05;
+                </div>
+                <div class="box2">
+                    <p>My Cart</p>
+                </div>
+            </div>
+            <div class="box-below">
+                <div class="box-below-1" id="borderbox" onclick="border_func()">
+                    <p>Flipkart(1)</p>
+                </div>
+                <div class="box-below-2" id="borderbox2" onclick="border_func2()">
+                    <p>Grocery</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container1">
+                <p>Deliever to <b> Bangalore - 560001 </b></p>
+                <button>Change</button>
+            </div>
+            <div class="container2">
+                <div class="left-container">
+                    <p style="font-weight: 700;">Think and Grow Rich</p>
+                    <p id="grey">English, paperback, Napolean Hill</p>
+                    <p>4.4* <span id="grey"> (545)</span></p>
+                    <p><b> &#8377;179 </b> &nbsp;<del id="grey"> &#8377;249</del>&nbsp; <span id="green"> 28% off</span></p>
+                    <p><span id="green">1 offer available</span></p>
+                    <p>Delievery in 6 Days | <span id="green"> Free </span></p>
+                </div>
+                <div class="right-container">
+                    <img src="/images/download (2)-min.jpg" width="70%" height="70%" alt="">
+                    <button>Qty 1 &#x25BC;</button>
+                </div>
+            </div>
+            <div class="container3">
+                <div class="left-container-1">
+                    <button class="savebutton-1">
+                        Save for later
+                    </button>
+                    
+                </div>
+                <div class="right-container-1">
+                    <button class="savebutton-2">
+                        Remove
+                    </button>
+                </div>
+            </div>
+            <p id="grey" style="display: block; background-color: white; margin: 0.5em 0em 0em 0em; padding: 0.5em 1em; font-size: 1em; ">PRICE DETAILS</p>
+            <hr style="margin: 0px;">
+            <div class="container1">
+                <p>Price (1 item)</p>
+                <p>&#8377;249</p>
+            </div>
+            <div class="container1">
+                <p>Discount</p>
+                <p id="green">&#8377;-70</p>
+            </div>
+            <div class="container1">
+                <p>Delievery charges</p>
+                <p id="green">FREE</p>
+            </div>
+            <hr style="margin: 0px;">
+            <div class="container1">
+                <p><b>Total amount</b></p>
+                <p><b>&#8377;179</b></p>
+            </div>
+            <hr style="margin: 0px;">
+            <div class="container1">
+                <p id="green">You will save &#8377;70 on this order</p>
+            </div>
+            <div class="container">
+                <img src="/images/safe-min.png" width="10%" height="10%" style="margin: 1em;" alt="">
+                <div style="margin: 1em ;">    
+                    <p id="grey">Safe and secure payments.Easy returns 100%</p>
+                    <p id="grey">Authentic Products</p>
+                </div>
+            </div>
+            <div class="container1" style="padding: 1em 0.5em;">
+                <div>
+                    <p style="margin: 0;"><b>179</b></p>
+                    <p style="margin: 0; font-size: 0.7em;" id="blue">view price details</p>
+                </div>
+                <button id="orange">
+                    Place Order
+                </button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

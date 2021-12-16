@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Flipkart.com</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="shortcut icon" href="images/flipkart_icon-icons.com_62718.ico" type="image/x-icon">
+    <link rel="stylesheet" href="common.css">
+    <script src="common.js"></script>
+    <style>
+        
+
+        
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            align-items: center;
+        }
+
+        .container img{
+            margin-top: 3em;
+            margin-bottom: 1em;
+            width: 35%;
+            height: 35%;
+        }
+
+        .container p{
+            margin: 0.5em auto;
+        }
+
+        button{
+            padding: 1em 3em;
+            color: white;
+            background-color: #2874f0;
+            border: 1px solid #2874f0;
+            margin: 2em;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container-pc">
+        <p>We made this website for only mobile phone users,so please adjust your screen size to mobile phone size to see it.</p>
+    </div>
+    <div class="container-mobile">
+        <header>
+            <div class="box">
+                <div class="box1">
+                    &#x2B05;
+                </div>
+                <div class="box2">
+                    <p>My Cart</p>
+                </div>
+            </div>
+            <div class="box-below">
+                <div class="box-below-1" id="borderbox" onclick="border_func()">
+                    <p>Flipkart(1)</p>
+                </div>
+                <div class="box-below-2" id="borderbox2" onclick="border_func2()">
+                    <p>Grocery</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <img src="images/images__2_-removebg-preview.png" alt="">
+                <p style="font-weight: bold; font-size: 0.8em;">Your Basket is empty</p>
+                <p style="font-weight: 300; font-size: 0.5em; color: gray;">Add items now</p>
+                <button>
+                    Shop Now
+                </button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
